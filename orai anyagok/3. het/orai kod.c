@@ -9,12 +9,17 @@ int main() {
     scanf_s("%d", &valasz);
 
     // A választ értelmezzük
-    // C-ben ha az érték nem 0, akkor igaznak számít
-    if (valasz) {
+    if (valasz == 1) { // két egyenlőségjel!
         printf("Nagyon jo\n");
+    } else if (valasz != 0) {
+        printf("Ez nincsen a valaszlehetosegek kozott!\n");
     } else {
         // Ha nem, akkor "else"-be kerül
         printf("Szomoruva tettel\n");
+    }
+    // C-ben minden nem 0 érték igaznak számít
+    if (valasz) {
+        printf("Nem nulla volt a valasz!\n");
     }
 
     // Matematikai feltételek
@@ -43,7 +48,7 @@ int main() {
     switch (kedvenc) {
         case 69:
             printf("Nice\n");
-            break;
+            break; // break; fontos!
         case 420:
             printf("Funny number hahaha\n");
             break;

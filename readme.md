@@ -9,10 +9,10 @@ Itt a félévközi anyagokat lehet látni, heti bontásban. Ez nincs kőbe vésv
 1. Változók, Visual Studio kezelése, `printf`
 2. Globális és lokális változók, `scanf`
 3. Elágazások: `if` és `switch`, Bitműveletek
-4. Ciklusok: `while` és `for`
-5. Tömbök és Pointerek
-6. Struktúrák + Függvények
-7. Gyakorlás + Tippek
+4. Ciklusok: `while` és `for`, Random számok
+5. Pointerek, Tömbök (statikus és dinamikus)
+6. Struktúrák, Függvények
+7. Gyakorlás, Tippek
 8. **Zárthelyi**
 9. Stringkezelés
 10. String feldolgozása
