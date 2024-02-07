@@ -15,19 +15,18 @@ int main(void)					// A program belépési pontja
 	int a;						// egész változó, csak deklarálás, ekkor a memóriaszemét nem törlődik, csak egybőli értékadásnál
 	const int b = -20;			// konstans, kötelező értéket adni, nem változtatható
 	unsigned int egesz, Egesz;	// kis / nagy betűk megkülönböztetve
-    // hosszabb nevek esetén pl. zacskosTej vagy zacskos_tej
+	// hosszabb nevek esetén pl. zacskosTej vagy zacskos_tej
 
-    // ha elkezdjük írni, az Intellisense felajánl kiegészítést tabozva
-    egesz = 20;		// 20
+// ha elkezdjük írni, az Intellisense felajánl kiegészítést tabozva
+	egesz = 20;		// 20
 	Egesz = 0xA;	// 10, hexadecimálisban a 0x miatt, (0...9, A,B...F)
 	Egesz = 0b1101; // bináris, Visual Studio sajátossága, nem alap C
-    a = 030;        // oktális számrendszer, mivel előtte 0 van
-    a = 30;
+	a = 030;        // oktális számrendszer, mivel előtte 0 van
+	a = 30;
 
 	Egesz = b;	// értékadás (signed -> unsigned) ?
-    
-    printf("%d\n", Egesz); // sima intként printeljük
-    printf("%u\n", Egesz); // unsigned intként printeljük, így helyes
+	printf("%d\n", Egesz); // sima intként printeljük
+	printf("%u\n", Egesz); // unsigned intként printeljük, így helyes
 
 	//b = 2;   // b csak olvasható, const errort ad, ha változtatnánk
 
@@ -64,7 +63,7 @@ int main(void)					// A program belépési pontja
 
 
 	return 0;
-    // return 1; pl. hibakód kilépés
+	// return 1; pl. hibakód kilépés
 }
 
 // Visual Studio funkciók:
