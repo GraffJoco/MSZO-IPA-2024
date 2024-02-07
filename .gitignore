@@ -2,3 +2,5 @@
 *.asm
 *.s
 *.mp4
+.vscode
+makefile
