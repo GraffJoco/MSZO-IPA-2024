@@ -38,7 +38,7 @@ int main() {
     // Switch: több, numerikus feltétel egymás után
     int kedvenc;
     printf("Mi a kedvenc szamod? ");
-    scanf("%d", &kedvenc);
+    scanf_s("%d", &kedvenc);
 
     switch (kedvenc) {
         case 69:
@@ -58,9 +58,11 @@ int main() {
     // Kombinált feltételek
     int x, y;
     printf("Kerek ket egesz koordinatat x,y stilusban!" );
-    scanf("%d,%d", &x, &y);
+    scanf_s("%d,%d", &x, &y);
 
-    if (x >= 0 && y >= 0) {
+    if (x == 0 || y == 0) {
+        printf("Tengelyen levo ertek\n");
+    } else if (x >= 0 && y >= 0) {
         printf("Pozitiv x, Pozitiv y\n");
     } else if (x >= 0) { // y < 0 nem kell, feltételezni lehet
         printf("Pozitiv x, Nempozitiv y\n");
@@ -71,4 +73,26 @@ int main() {
     }
 
     /* BITMŰVELETEK */
+    // Ez csak egy minimális rész, ZH-n nem kérjük
+    // Feladat: paritásbit számlálása -> 4 bites számnál páros vagy páratlan számú '1' értékű bit van?
+    int ertek;
+    printf("Kerek egy 4 bites szamot! ");
+    scanf_s("%d", &ertek);
+    
+    // Ellenőrizzük, hogy a jó intervallumban van-e, x eleme [0; 16[ ?
+    if (x < 0 || x >= 16) {
+        printf("A szam nem 4 bites!\n");
+    } else {
+        int pozitiv_bitek = 0;
+        pozitiv_bitek += ertek & 1;
+        pozitiv_bitek += (ertek >> 1) & 1;
+        pozitiv_bitek += (ertek >> 2) & 1;
+        pozitiv_bitek += (ertek >> 3) & 1;
+
+        if (pozitiv_bitek % 2 == 0) {
+            printf("Paros szamu '1' erteku bit van a szamban!\n");
+        } else {
+            printf("Paratlan szamu '1' erteku bit van a szamban!\n");
+        }
+    }
 }
