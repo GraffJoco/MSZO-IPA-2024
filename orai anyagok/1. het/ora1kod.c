@@ -1,7 +1,7 @@
 // Fejállományok (header fájlok): <> rendszer, "" saját
 #include <stdio.h>	// standard input/output
 
-// Definició, előfordító behelyettesíti, nincs ;
+// Definició, előfordító behelyettesíti, nincs ; utána
 #define PI 3.14159
 
 // Globális változók helye, végig a memóriában marad, "memória pazarlás"
@@ -30,19 +30,18 @@ int main(void)					// A program belépési pontja
 
 	//b = 2;   // b csak olvasható, const errort ad, ha változtatnánk
 
-
 	printf("a erteke: %d \n", a);				// %d vagy %i egész
 	printf("a erteke oktalisan: 0%o \n", a);		// %o oktális
 	printf("a erteke hexadecimalisan: 0x%x \n", a);	// %x hexa
 	printf("a merete a memoriaban: %i byte\n", sizeof(a));	//sizeof változó vagy típus mérete
 	printf("short int merete a memoriaban: %i byte\n", sizeof(short int));
-	printf("long long merete a memoriaban: %i byte\n", sizeof(long long));	// szám LL
+	printf("long long merete a memoriaban: %i byte\n", sizeof(long long));
 
 	printf("a = %d, b = %d\n", a, b);			// annyi változó, ahány a formátumban szerepel
 
 	double tort = 3.14;		// tizedestört mindig . , de! magyarban (,) ezért fájlkezelésben problémás
 
-	printf("tort erteke: %f\n", tort);		// float
+	printf("tort erteke: %f\n", tort);		// float, double esetén %lf is jó
 	printf("tort erteke: %5.1f\n", tort);	// 1 tizedes, 5 összes
 	printf("tort erteke: %.1f\n", tort);	// 1.tizedes
 	printf("tort erteke: %e\n", tort);		// normál alak
