@@ -61,9 +61,17 @@ int main(void)
     a += 2; // a=13;
 
     // egy operandusú műveletek
-    a++;     // a=14;
+    a = 14;
     b = a++; // b=14 a=15 utótag / post-increment
     b = ++a; // b=16 a=16 előtag / pre-increment
+
+    a = 10;
+    // különbség bemutatása printf-el:
+    printf("a++ kiiratasa: %d\n",a++);
+    printf("a erteke a++ utan: %d\n", a);
+    a = 10;
+    printf("++a kiiratasa: %d\n",++a);
+    printf("a erteke ++a utan: %d\n", a);
 
     int db = 21 / 5;      // egész osztás (4)
     int maradek = 21 % 5; // maradék (modulus)
