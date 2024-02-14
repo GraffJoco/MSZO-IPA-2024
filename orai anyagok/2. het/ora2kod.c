@@ -71,7 +71,7 @@ int main(void)
     // matematikai műveletek <math.h>
     // sin - szinus radiánban!
     // cos - koszinusz radiánban
-    // pow - hatványozás pow(alap, kitevõ)
+    // pow - hatványozás pow(alap, kitevõ), a ^ az bitművelet, nem hatványozás
     // sqrt - gyökvonás
     // exp - e^x
     // log - természetes alapú logaritmus
