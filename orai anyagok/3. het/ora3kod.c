@@ -1,6 +1,7 @@
 /* IPA 3. HETI GYAKORLAT: ELÁGAZÁSOK */
 
 #include <stdio.h> // printf, scanf
+#include <math.h>
 
 int main() {
     // Fontos kérdéseket teszünk fel a felhasználónak
@@ -119,25 +120,43 @@ int main() {
 	- számítás elvégzése
 	- eredmény kiíratása
 	*/
-	double x, eredmeny;
-	printf("Feladat:\nx="); scanf_s("%lf", &x);
-	if (x  < -1) eredmeny= cos(x);
-	else if (x >= 1) eredmeny = sqrt(x);
-	else eredmeny = pow(sin(x), 3);
+	double z, eredmeny;
+	printf("Feladat:\nx="); scanf_s("%lf", &z);
+	if (z  < -1) eredmeny= cos(z);
+	else if (z >= 1) eredmeny = sqrt(z);
+	else eredmeny = pow(sin(z), 3);
 	printf("A feladat megoldasa:\neredmeny=%6.3lf\n", eredmeny);
 
     /* BITMŰVELETEK */
     // Ez csak egy minimális rész, ZH-n nem kérjük
-    
-    egesz = 7;
 
     // << elshiftelés / biteltolás
     // ~ invertálás
+    // & AND , | OR
+    // ^ XOR
 
+    egesz = 5;
     // 2. bit beállítása:
-    egesz |= 1 << 1;
-    // 4. bit törlése
-    egesz &= ~(1 << 3);
+    egesz = egesz | (1 << 1);
+    printf("A masodik bit beallitasa utan: %d\n", egesz);
+
+    egesz = 5;
+    // 3. bit törlése
+    egesz = egesz & (~(1 << 2));
+    printf("A 3. bit torlese utan: %d\n", egesz);
+
+    // maszk használata titkosításhoz
+    egesz = 5;
+    b = 0b10101010;
+    egesz = egesz ^ b;
+    printf("Titkositva: %d\n", egesz);
+    egesz = egesz ^ b;
+    printf("Kicsomagolva: %d\n", egesz);
+
+    // kettes komplemens képzés
+    egesz = 5;
+    int komplemens = (~egesz) + 1;
+    printf("A %d kettes komplemense: %d\n", egesz, komplemens);
     
     // Feladat: paritásbit számlálása -> 4 bites számnál páros vagy páratlan számú '1' értékű bit van?
     int ertek;
