@@ -91,7 +91,7 @@ int main(void)
 
     int szam_egesz;
     printf("Adjon meg egy egesz szamot: ");
-    // érték beolvasása a változóba (címet & kell megadni, ez lesz a pointer, kesobbi tananyag)
+    // érték beolvasása a változóba (címet & kell megadni, ez lesz a pointer, késöbbi tananyag)
     scanf("%i", &szam_egesz); // Microsoft biztonságos verzió scanf_s, ellenorzi mit kapott, zh-ba inkabb ezt
     printf("A megadott szam: %i\n", szam_egesz);
 

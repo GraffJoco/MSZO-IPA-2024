@@ -7,7 +7,6 @@ int main(void)
 {
 
     // RANDOM SZÁMOK
-
 	time_t ido;
 	ido = time(NULL); // 1970. jan 1-től eltelt sec
 	printf("%li\n", ido);
