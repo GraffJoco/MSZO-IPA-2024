@@ -8,7 +8,6 @@
 */
 
 #include <stdio.h>  // printf, scanf(_s)
-#include <conio.h>  // getch()
 #include <math.h>   // matematikai készlet
 #include <stdlib.h> // malloc
 
@@ -17,11 +16,13 @@
 int main(void)
 {
     // Mutató használata
-    int i = 100, j; // lokális statikus változó stack-en
-    int *p = NULL;  // pointer
-    p = &i;         // változó címét tárolja
+    int i = 100;   // lokális statikus változó stack-en
+    int *p = NULL; // pointer
+    p = &i;        // változó címét tárolja
     printf("i=%i &i=%i *p=%i p=%i &p=%p\n", i, &i, *p, p, p);
+    // pointer merete 8 byte 64-bites rsz-ben; 4 byte 32-bitesben; ez tipus fuggetlen
 
+    // A valtozo és *pointer ugyanaz
     i++; // ha változik a statikus változó
     printf("i=%i *p=%i\n", i, *p);
 
@@ -29,14 +30,16 @@ int main(void)
     printf("i=%i *p=%i\n", i, *p);
 
     // precedencia szabály!!!
-    *p++; // (*p)++ *p+1 *(p+1) melyik mit csinál?
+    *p++; // elmozdul a pointer, KICIMZES!!, helyesen (*p)++ vagy ++*p
     printf("i=%i *p=%i\n", i, *p);
+    // poineterrel vegezheto muveletek: ++/--; +/- int;
+    // ugyanarra a tipus pointerre: ptr-ptr; ptr==ptr; ptr=ptr;
 
     // dinamikus terület foglalás heap-re
     double *pd = (double *)malloc(sizeof(double));
     *pd = 43.25;
     printf("%f\n", *pd);
-    free(pd);
+    free(pd); //"Aki malloc-ol tegyen free-t is"
     // felszabadítás után már nem szabad használni!!
     printf("%f\n", *pd);
 
@@ -49,34 +52,42 @@ int main(void)
     pv = NULL;
 
     // Tömb és for ciklus
-    int ti[TMERET];
-    for (i = 0; i < TMERET; i++)
-        ti[i] = i * i;
-    for (i = 0; i < TMERET;)
+    // statikus tomb, a programnak lefutas elott tudnia kell a meretet, fix
+    int ti[TMERET];              // a ti valojaban egy int pointer
+    for (i = 0; i < TMERET; i++) // for (inicializalaskor;feltetel;itertacio vegen)
+        ti[i] = i * i;           // lehetne *(ti+i)
+    for (i = 0; i < TMERET;)     // a for (;;) is valid, ures feltetel olyan mintha (true) lenne
         printf("%d ", ti[i++]);
     printf("\n");
 
     // inicializálás
-    int ti2[] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};     // 10 elemű tömb - statikus
+    int ti2[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};     // 10 elemű tömb - statikus, a merete = {} kozotti elemszam
     const int tmeret = sizeof(ti2) / sizeof(ti2[0]); // megadja a tömb méretét  //sizeof(ti2)/sizeof(int)
     for (i = 0; i < tmeret; i++)
         printf("%i ", ti2[i]); // előre
+
     printf("\n");
     for (i = tmeret - 1; i >= 0; i--)
         printf("%d ", ti2[i]); // vissza felé
+
     printf("\n");
+
     p = ti2; // végigjárás pointerrel - pointer a tömb elejére irányítva
     for (i = 0; i < tmeret; i++)
         printf("%i ", *(p++)); // *p++ is elég
-    p = &ti2[tmeret - 1];      // visszafelé - pointer a tömb végére irányítva
+
+    p = &ti2[tmeret - 1]; // visszafelé - pointer a tömb végére irányítva
     for (i = 0; i < tmeret; i++)
         printf("%d ", *(p--));
     printf("\n");
+    // mindketto utan p-t ujabb ertekadas elott nem szabad hasznalni mert elkoborolt
 
     // dinamikus tömbkezelés
-    int *pi = (int *)malloc(tmeret * sizeof(int)); // 10 elemű tömb - dinamikus
-    for (i = 0, j = tmeret - 1; i < tmeret; i++, j--)
-        pi[i] = ti[j]; // pi[i] = *(ti+i)
+    int j;
+    int *pi = (int *)malloc(tmeret * sizeof(int)); // 10 elemű tömb - dinamikus -> nem fix a meret
+
+    for (i = 0, j = tmeret - 1; i < tmeret; i++, j--) // vesszovel elvalasztva tobb parancs, deklaralasnal csak ugyaolyan tipusuak
+        pi[i] = ti[j];                                // pi[i] = *(ti+i)
     for (i = 0; i < tmeret; i++)
         printf("%i ", *(pi + i));
     printf("\n");
