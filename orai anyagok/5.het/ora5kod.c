@@ -19,7 +19,7 @@ int main(void)
     int i = 100;   // lokális statikus változó stack-en
     int *p = NULL; // pointer
     p = &i;        // változó címét tárolja
-    printf("i=%i &i=%i *p=%i p=%i &p=%p\n", i, &i, *p, p, p);
+    printf("i=%i &i=%p *p=%i p=%i &p=%p\n", i, &i, *p, p, &p);
     // pointer merete 8 byte 64-bites rsz-ben; 4 byte 32-bitesben; ez tipus fuggetlen
 
     // A valtozo és *pointer ugyanaz
@@ -92,6 +92,55 @@ int main(void)
         printf("%i ", *(pi + i));
     printf("\n");
     free(pi); // felszabadítás
+
+    // Tömbökön végzett alapműveletek
+
+    double* t = (double*) malloc(tmeret * sizeof(double)); // 10 elemű dinamikus double tömb
+
+    // 1. inicializálás és adatok kiiratása
+    for (int i = 0; i < tmeret; i++)
+    {
+        t[i] = i * i * i;
+        printf("%.1lf ", t[i]);
+    }
+    printf("\n");
+
+    // 2. Egy elem megkeresése - pl 64
+    int index = -1; // ide tároljuk a talált elem indexét
+    for (int i = 0; i < tmeret; i++)
+    {
+        if (t[i] == 64) index = i;
+    }
+    if (index == -1) printf("Az elem nem talalhato!\n");
+    else printf("A keresett elem indexe: %d\n",index);
+
+    // 3. Összeg és átlag számolása
+    double szum = 0;
+    for (int i = 0; i < tmeret; i++)
+    {
+        szum += t[i];
+    }
+    double atlag = szum / tmeret;
+    printf("Az elemek osszege %lf, az atlaguk %lf\n",szum,atlag);
+
+    // 4. Minimum és maximum keresés
+
+    double max = t[0];
+    double min = t[0];
+    for (int i = 0; i < tmeret; i++)
+    {
+        if (t[i] > max) max = t[i];
+        if (t[i] < min) min = t[i];
+    }
+    printf("A legnagyobb elem: %lf\n", max);
+    printf("A legkisebb elem: %lf\n", min);
+
+    // 5. Elemek módosítása: pl. felezzünk meg minden elemet
+    for (int i = 0; i < tmeret; i++)
+    {
+        t[i] /= 2;
+        printf("%.1lf ",t[i]);
+    }
 
     return 0;
 }
