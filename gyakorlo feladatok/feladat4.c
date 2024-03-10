@@ -80,4 +80,5 @@ int main() {
   printf("Harmas: %d\n", harmas);
   printf("Kettes: %d\n", kettes);
   printf("Egyes: %d\n", egyes);
+  free(ctomb);
 }
