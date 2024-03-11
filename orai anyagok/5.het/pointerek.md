@@ -1,10 +1,10 @@
 # Pointerek
 
-## Gyors talpaló az IPA legnehezebb fogalmához
+## Gyorstalpaló az IPA legnehezebb fogalmához
 
 ### Alapok
 
-A pointerek (mutatók) számok, amik mutatják, hogy egy érték hol található a memóriában (hanyadik byte). Ezek használatával tudjuk a gép memóriáját manipulálni, pl.: tömböket használni. Ezek a pointerek egy bizonyos típushoz mutatnak, `tipus*`-gal jelöljük, egy változó címét/pointerét pedig az `&` operátorral tudjuk megszereni (emiatt kell az a `scanf` függvényben)  
+A pointerek (mutatók) számok, amik mutatják, hogy egy érték hol található a memóriában (hanyadik byte). Ezek használatával tudjuk a gép memóriáját manipulálni, pl.: tömböket használni. Ezek a pointerek egy bizonyos típushoz mutatnak, `tipus*`-gal jelöljük, egy változó címét/pointerét pedig az `&` operátorral tudjuk megszereni (emiatt kell az a `scanf` függvényben).
 
 ```C
 // Int pointer
@@ -46,7 +46,7 @@ int tomb[3]; // 3 index van
 // 5 elemű tömb, kapcsos zárójeles felsorolással lehet értékeket is adni
 double masik[5] = { -0.5, 3.0, 2.9, 0.0, -3.14 };
 
-masik[3] = tomb[1]; // HIBA: tomb[1]-nek nek adtunk értéket!
+masik[3] = tomb[1]; // HIBA: tomb[1]-nek nem adtunk értéket!
 
 masik[0] = 0.0; // Jó, 0 és 4 között vannak masik indexei
 
@@ -95,7 +95,7 @@ Ebben a részben pár alap tömbalgoritmust ismerünk meg, amik hasznosak, és a
 
 Hogyan lehet megtalálni egy $n$ méretű tömb maximumát, minmumát?
 Változóba mentsük el az első elemét, és menjünk át a tömbön, ha az aktuális érték pedig nagyobb/kisebb, akkor cseréljük le arra az értéket.
-Ezt addig tudjuk ismételni, amí nem érünk a tömb végére.
+Ezt addig tudjuk ismételni, amíg nem érünk a tömb végére.
 
 ```C
 // ...

@@ -32,13 +32,14 @@ c) Kérj be számokat addig, amíg a felhasználó nem jelzi, hogy elég! Írasd
 
 d) Generálj egy véletlen számot 56 és 279 között! Vizsgáld meg, hogy prímszám-e!
 
-### 4. Tömbök
+## 4. Tömbök
+
 a) Egy 30 elemes egész statikus tömböt tölts fel random számokkal 0 és 100 között, az átlagukat írd ki
 
 b) Kérj egy n egész számot a felhasználótól,
 ha nem lehet akkora tömb, akkor írd ki, hogy "Rossz érték", és lépj ki -1 kóddal.
 Ha jó, akkor hozz létre n db nemegész számot [1; 5] között, és írd ki
-A szorzatukat.
+a szorzatukat.
 
 c) Hozz létre egy n elemű egész tömböt, amiben tárolod a hallgatók pontszámát [0; 100].
 Ez alapján ossz jegyeket, írj ki minden pontszámot "[pontok; jegy]" formátumban,

@@ -82,12 +82,26 @@ struct hallgato {
     int eddigiKreditek;
 };
 
+// typedef: elé syntax, végére név
+
+
 // Struktúrák lehetnek függvényekben is!
 // Példa: vektorok skaláris szorzása
 
 double skalarSzoroz(struct vektor egyik, struct vektor masik) {
     return (egyik.x * masik.x) + (egyik.y * masik.y) + (egyik.z * masik.z);
 }
+
+struct p2D {
+	double x;
+	double y;
+	//int index;  //további adatok
+};
+
+// typedef: átírható a név, könnyebb kód
+typedef struct {
+	int x, y;
+} pixel_t;
 
 int main() {
     // Függvények tesztelése
@@ -116,4 +130,24 @@ int main() {
         matrix[i].z = (double)rand() / (double)RAND_MAX;
         printf("%lf, %lf, %lf\n", matrix[i].x, matrix[i].y, matrix[i].z);
     }
+
+    // statikus struktúra
+	struct p2D P;
+	// adatok elérése
+	P.x = 5;
+	P.y = 5;
+    printf("Az P pont koordinatai: (%lf,%lf)\n", P.x, P.y);
+
+	// typedef használatával
+	pixel_t Origo;
+	Origo.x = 0;
+    Origo.y = 0;
+
+	// dinamikus struktúra
+	struct p2D *Pont = (struct p2D *) malloc(sizeof(struct p2D));
+	
+	(*Pont).x = 3;
+	Pont->y = 5;
+
+	free(Pont);
 }

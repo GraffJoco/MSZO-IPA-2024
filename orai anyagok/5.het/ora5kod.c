@@ -107,11 +107,15 @@ int main(void)
 
     // 2. Egy elem megkeresése - pl 64
     int index = -1; // ide tároljuk a talált elem indexét
+    int van = 0; // ide tároljuk, hogy létezik e az elem
     for (int i = 0; i < tmeret; i++)
     {
-        if (t[i] == 64) index = i;
+        if (t[i] == 64) {
+            van = 1;
+            index = i;
+        };
     }
-    if (index == -1) printf("Az elem nem talalhato!\n");
+    if (van == 0) printf("Az elem nem talalhato!\n");
     else printf("A keresett elem indexe: %d\n",index);
 
     // 3. Összeg és átlag számolása
@@ -141,6 +145,65 @@ int main(void)
         t[i] /= 2;
         printf("%.1lf ",t[i]);
     }
+
+    // 6. Elemek megszámolása pl. 10 darab 1 és 10 közötti számból mennyi 4-es?
+    int negyes = 0;
+    for (int i = 0; i < tmeret; i++)
+    {
+        if (t[i] == 4) {
+            negyes++;
+        }
+    }
+    printf("\nA tombben %d darab 4-es van!\n", negyes);
+
+    // 7. Rendezés
+    // Buborék rendezés
+	double tmp;
+	for (i = tmeret - 1; i > 0; i--){
+		for (j = 0; j < i; j++){
+			if (t[j] > t[j + 1])
+			{
+				tmp = t[j];
+				t[j] = t[j + 1];
+				t[j + 1] = tmp;
+			}
+		}
+	}
+	printf("Rendezeve:\n");
+	for (i = 0; i<tmeret; i++)
+		printf("%.1lf ", t[i]);
+	printf("\n");
+
+    // statikus 2d-s tömb
+	int tb[3][4] = { { 1, 2, 3, 4 },
+	{ 2, 3, 4, 5 },
+	{ 3, 4, 5, 6 } };
+
+	// dinamikus 2D -tömb
+	int sor = 4;
+	int oszlop = 4;
+	int** Matrix = (int**)malloc(sizeof(int*) * sor);
+	for (int i = 0; i < sor; i++) 
+		Matrix[i] = (int*)malloc(sizeof(int) * oszlop);
+	// feltöltés
+	for (int i = 0; i < sor; i++)
+		for (int j = 0; j < oszlop; j++)
+			if (i == j) Matrix[i][j] = 1;
+			else 		Matrix[i][j] = 0;
+	// kiírás
+	for (int i = 0; i < sor; i++)
+	{
+		for (int j = 0; j < oszlop; j++) printf("%5i", Matrix[i][j]);
+		printf("\n");
+	}
+	// felszabadítás fordított sorrendben
+	for (int i = 0; i < sor; i++)
+		free(Matrix[i]);
+	free(Matrix);
+    
+
+
+    free(t);
 
     return 0;
 }
