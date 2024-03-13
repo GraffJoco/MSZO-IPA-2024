@@ -56,8 +56,8 @@ int main(void)
 
     for (i = TMERET - 1; i > 0; i--)
     {
-        for (int j = 0; j < i; j++)
-        { // i helyett Tmerettel lenne 1 ciklus
+        for (int j = 0; j < i; j++) // i helyett Tmerettel lenne 1 ciklus
+        {
             if (st[j] > st[j + 1])
             {
                 double tmp = st[j];
@@ -122,7 +122,7 @@ int main(void)
 
     free(Pont);
 
-    // 2 pontnak foglalok le helyet, nem lehet statikus struct tomb
+    // 2 pontnak foglalok le helyetű
     struct p2D *Szakasz = (struct p2D *)malloc(2 * sizeof(struct p2D));
 
     Szakasz[0].x = 1;
@@ -132,10 +132,10 @@ int main(void)
 
     // Joe kerte: haromoperandusu oparator
 
-    int X1nagyobb = (Szakasz[0].x > Szakasz[1].x) ? 1 : 0;
-    // if (X1nagyobb) {...} else {...}
+    int nagyobbX = (Szakasz[0].x > Szakasz[1].x) ? 0 : 1;
+    // if (nagyobbX) {...} else {...}
 
-    (Szakasz[0].x > Szakasz[1].x) ? printf("X1 nagyobb") : printf("X1 kisebb");
+    (Szakasz[0].x > Szakasz[1].x) ? printf("0 x-e nagyobb") : printf("1 x-e nagyobb");
 
     free(Szakasz);
 
