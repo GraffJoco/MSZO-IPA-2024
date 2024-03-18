@@ -20,7 +20,7 @@ int main() {
   }
 
   atlag = (double)szumma / 100;
-  printf("A szaz szam szummaja %d", szumma);
+  printf("A szaz szam szummaja %d\n", szumma);
 
   // b.
   int n;
@@ -81,4 +81,43 @@ int main() {
   printf("Kettes: %d\n", kettes);
   printf("Egyes: %d\n", egyes);
   free(ctomb);
+
+  // d.
+  int *dtomb = (int*)malloc(sizeof(int) * 30);
+  int i = 0;
+  // Mivel lehet, hogy az elsőre nem sikerül megfelelő számot sorsolni, while ciklust használunk
+  while (i < 30)
+  {
+    int szam = (rand() % 2000) + 1;
+    if (szam % 2 == 0 && szam % 7 == 0)
+    {
+      dtomb[i] = szam; // ha a szám megfelelő, elmentjük, majd léptetünk
+      i++;
+    }
+  }
+  printf("4-el vagy 5-tel oszthato szamok:\n");
+  for (int i = 0; i < 30; i++)
+  {
+    if(dtomb[i] % 4 == 0 || dtomb[i] % 5 == 0) printf("%d ",dtomb[i]);
+  }
+  printf("\nA tomb rendezve:\n");
+  
+  // Buborékrendezés
+  for (int i = 29; i >= 0; i--)
+  {
+    for (int j = 0; j < i; j++)
+    {
+      if (dtomb[j] < dtomb[j+1])
+      {
+        int tmp = dtomb[j];
+        dtomb[j] = dtomb[j+1];
+        dtomb[j+1] = tmp;
+      }
+    }
+  }
+  for (int i = 0; i < 30; i++)
+  {
+    printf("%d ", dtomb[i]);
+  }
+  free(dtomb);
 }

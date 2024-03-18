@@ -34,7 +34,7 @@ d) Generálj egy véletlen számot 56 és 279 között! Vizsgáld meg, hogy prí
 
 ## 4. Tömbök
 
-a) Egy 30 elemes egész statikus tömböt tölts fel random számokkal 0 és 100 között, az átlagukat írd ki
+a) Egy 30 elemes egész statikus tömböt tölts fel random számokkal 0 és 100 között, az átlagukat írd ki!
 
 b) Kérj egy n egész számot a felhasználótól,
 ha nem lehet akkora tömb, akkor írd ki, hogy "Rossz érték", és lépj ki -1 kóddal.
@@ -45,3 +45,4 @@ c) Hozz létre egy n elemű egész tömböt, amiben tárolod a hallgatók pontsz
 Ez alapján ossz jegyeket, írj ki minden pontszámot "[pontok; jegy]" formátumban,
 valamint csinálj kis statisztikát, hogy hányan milyen jegyet kaptak.
 
+d) Hozz létre egy 30 elemből álló dinamikus tömböt, amely egész számokat tárol. Töltsd fel 1 és 2000 közötti, 2-vel és 7-tel is osztható számokkal. Írd ki azokat a számokat, amelyek oszthatóak 4-gyel vagy 5-tel! Az eredeti tömböt rendezd csökkenő sorrendbe, majd írasd ki az elemeit!
