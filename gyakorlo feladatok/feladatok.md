@@ -46,3 +46,11 @@ Ez alapján ossz jegyeket, írj ki minden pontszámot "[pontok; jegy]" formátum
 valamint csinálj kis statisztikát, hogy hányan milyen jegyet kaptak.
 
 d) Hozz létre egy 30 elemből álló dinamikus tömböt, amely egész számokat tárol. Töltsd fel 1 és 2000 közötti, 2-vel és 7-tel is osztható számokkal. Írd ki azokat a számokat, amelyek oszthatóak 4-gyel vagy 5-tel! Az eredeti tömböt rendezd csökkenő sorrendbe, majd írasd ki az elemeit!
+
+## 5. Struktúrák és függvények
+
+a) Készíts egy komplex szám struktúrát! Hozz létre egy dinamikus tömböt, amely konzolról beadott darabszámú komplex számot tartalmaz! A valós és képzetes részek is -100 és 100 között legyenek. Írj függvényeket 2 komplex szám összeadására, kivonására és szorzására. Próbáld ki ezeket a tömb pár elemén!
+
+b) Hozz létre egy hallgató struktúrát! Legyen egy azonosítója, amely egy 4 jegyű egész szám, illetve egy korrigált kreditindex értéke. Tárold el őket egy tetszőleges méretű tömbben, random generálva. Írasd ki a konzolra azon hallgatók azonosítóját, akik kaptak kollégiumi férőhelyet, ha a minimum KKI 3.98 volt! (az azonosítók ismétlődésétől tekintsünk el)
+
+c) Írj egy függvényt, amely bemenete egy n egész szám, visszatérési értéke pedig az első n pozitív egész szám összege!
