@@ -120,4 +120,30 @@ int main() {
     printf("%d ", dtomb[i]);
   }
   free(dtomb);
+
+   // e)
+  
+  printf("\nHany fibonacci szamot szeretnel? ");
+  scanf_s("%d", &n);
+    
+  int* fib = (int*)malloc(sizeof(int) * n); // A Fibonacci sorozat elemeit tartalmazó tömb
+  // Az első 2 szám 1-es
+  fib[0] = 1;
+  fib[1] = 1;
+  if (n > 2) { // csak akkor megyünk tovább, ha legalább 3 elemünk van
+    for (int i = 2; i < n; i++) // a második indextől indulunk
+    {
+      fib[i] = fib[i-1] + fib[i-2];
+    }
+  }
+  // Elemek kiiratása:
+  for (int i = 0; i < n; i++)
+  {
+    printf("%d ", fib[i]);
+  }
+  
+free(fib);
+  
+
+return 0;
 }
