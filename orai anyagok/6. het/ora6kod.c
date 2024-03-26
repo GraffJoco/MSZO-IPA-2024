@@ -23,12 +23,16 @@ void kiir(double val) {
     printf("%lf\n", val);
 }
 
+double szumma(double a, double b, double c) {
+    if (a < 0) return NAN;
+    else return a + b + c;
+}
+
 // Összetettebb példa: Fibonacci sor, rekurzió
 int Fibonacci(unsigned int ertek) {
     if (ertek == 1 || ertek == 0) return ertek;
     return Fibonacci(ertek - 1) + Fibonacci(ertek - 2);
 }
-
 // Probléma: lassú a kód ~35 felett
 // Megoldás: Optimalizált Fibonacci algoritmus, ami globális változókat használ
 int* Fib_ertekek = NULL;
@@ -82,12 +86,26 @@ struct hallgato {
     int eddigiKreditek;
 };
 
+// typedef: elé syntax, végére név
+
+
 // Struktúrák lehetnek függvényekben is!
 // Példa: vektorok skaláris szorzása
 
 double skalarSzoroz(struct vektor egyik, struct vektor masik) {
     return (egyik.x * masik.x) + (egyik.y * masik.y) + (egyik.z * masik.z);
 }
+
+struct p2D {
+	double x;
+	double y;
+	//int index;  //további adatok
+};
+
+// typedef: átírható a név, könnyebb kód
+typedef struct {
+	int x, y;
+} pixel_t;
 
 int main() {
     // Függvények tesztelése
@@ -96,6 +114,15 @@ int main() {
     printf("%u\n", Fibonacci(30));
     printf("Gyors Fib: ");
     printf("%u\n", FibonacciGyors(30));
+
+    double beadott;
+    scanf_s("%lf", &beadott);
+    double megoldas = szumma(beadott,2,4.0);
+    if (isnan(megoldas)) {
+        printf("Nem ertelmes az osszeg!\n");
+        return -1;
+    }
+    printf("Lefutott a szumma!\n");
 
     // Struktúrák
     // Példány létrehozása
@@ -116,4 +143,24 @@ int main() {
         matrix[i].z = (double)rand() / (double)RAND_MAX;
         printf("%lf, %lf, %lf\n", matrix[i].x, matrix[i].y, matrix[i].z);
     }
+
+    // statikus struktúra
+	struct p2D P;
+	// adatok elérése
+	P.x = 5;
+	P.y = 5;
+    printf("Az P pont koordinatai: (%lf,%lf)\n", P.x, P.y);
+
+	// typedef használatával
+	pixel_t Origo;
+	Origo.x = 0;
+    Origo.y = 0;
+
+	// dinamikus struktúra
+	struct p2D *Pont = (struct p2D *) malloc(sizeof(struct p2D));
+	
+	(*Pont).x = 3;
+	Pont->y = 5;
+
+	free(Pont);
 }

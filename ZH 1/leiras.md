@@ -14,7 +14,35 @@ Egyes: $p < 40$
 Kettes: $40 \leq p < 55$  
 Hármas: $55 \leq p < 70$  
 Négyes: $70 \leq p < 85$  
-Ötös: $85 \leq p$  
+Ötös: $85 \leq p$
+
+## Futó diákok
+
+Egy gimnáziumi testnevelés órán a diákokat betonon futással kínozzák a 40 °C-ban. A diákoknak 30 percen át kell minél többet futniuk, hogy jó jegyet kaphassanak.
+
+a) Kérje be a felhasználótól, hogy hány diák jár az osztályba! Amennyiben a megadott szám nem lehetséges, írjon ki hibaüzenetet és lépjen ki a programból!
+
+b) Készítsen egy dinamikus tömböt, ami az osztályba járó embereket tárolja! Az diákok legyenek sorszámozva (azonosító), legyen nemük (logikai változóként), valamint tároljuk el, hogy hány (egész) métert futottak (tegyük fel, hogy senki nem futott 6km-nél többet, se 1 km-nél kevesebbet). A nem és a futott távolság legyenek random generáltak. (A struktúrát átnevezhetjük "diak"-nak a rövidítés kedvéért.)
+
+c) Írja ki a konzolra, hogy ki futotta a legtöbbet és a legkevesebbet! (elegendő 1 diák mindkettőhöz) Ha egy kör 500 méter volt, hány egész kört futott a legtöbbet futó? Mennyi volt az osztály átlagsebessége m/s-ban és km/h-ban? (nem a sebességek átlaga!)
+
+d) Határozza meg külön-külön a fiúk és a lányok által futott átlagos távolságot! Ki volt az a diák, aki által futott távolság legközelebb volt a 2 átlag átlagához?
+
+e) Határozza meg, hogy hány százaléka a lányoknak futott többet, mint a fiúk által átlagosan futott távolság!
+
+f) Akinek sikerült legalább 4km-t futni, az ötöst kapott. Hány ilyen diák volt?
+
+g) Kérjen be egy számot a konzolról méterben! Hányan futottak ennél kevesebbet? Volt olyan diák, aki pont ennyit futott?
+
+h) Tegyük fel, hogy a fogyasztott energia mindenkinél egyenesen arányos az általa futott távolsággal, és ez a konstans 261,25 kJ/km. Legalább hány (egész) mekis sajtburgert vegyen az osztály, ha szeretné visszatölteni az energiáját? (1 sajtburger = 1243 kJ) Mennyi pénzbe kerül ez, ha 650 forint egy burger?
+
+i) Budapest és Szeged távolsága körülbelül 180km. Képes lenne-e az osztály váltófutást tartani a két város között?
+
+j) Rendezze sorba a diákokat futott távolság alapján növekvő sorrendbe!
+
+k) Szedje külön dinamikus tömbökbe a lányokat és a fiúkat!
+
+
 
 ## **(\*)** Életjáték
 
