@@ -26,3 +26,30 @@ Feladathoz kell:
 - ciklusok
 - random számok
 - függvények (nem kötelező, de szebb a kód)
+
+## Neptun kód generátor  
+
+Csinálj egy programot, ami random generál egy neptun kódot. Minden kód 6 karakterből áll, ezek angol betűk vagy számok legyenek. Egy új szabály is van, hogy minden karakter legyen eredeti. Írd ki a generált kódot a konzolba.
+
+Feladathoz kell:
+
+- Karakterkódok ismerete
+- Statikus tömbhasználat
+- Random számgenerátor
+
+## A Rossz ZH  
+
+Egy, itt meg nem nevezett tanszék meg akarja szivatni a hallgatókat. A legjobb hallgató max 76%-ot írt. Kérd be, hogy hány hallgató (n N+ ) írt ZH-t. Generáld le a pontszámokat. A tanszék döntheti el, hogy 40% és 50% között mennyi legyen a kettes határa. Úgy húzd meg a határt, hogy a bukási ráta maximum legyen, de ne érje el a 65%-ot. Ha ez lehetetlen, mert >65% írt 40% alatt, akkor írd ki, hogy a ZH érvénytelen. Ha azért, mert >65% írt 50% fölött, akkor írd ki, hogy “nem is lett olyan rossz”. Különben írd ki a bukók számát, és arányát.
+
+Feladatnak két megoldása van
+
+Elsőhöz kell:
+
+- Random számok
+- Statikus tömb
+- Algoritmusok ismerete
+
+Másodikhoz kell:
+
+- Random számok
+- Dinamikus tömb
