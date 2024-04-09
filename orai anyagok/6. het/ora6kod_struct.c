@@ -20,10 +20,10 @@ struct p2D
     // int index;  //további adatok
 };
 
-// Állnév
+// Álnév
 typedef unsigned int termeszetes;
 
-// Stuktúra állnévvel
+// Stuktúra álnévvel
 typedef struct
 {
     int x, y;
@@ -122,7 +122,7 @@ int main(void)
 
     free(Pont);
 
-    // 2 pontnak foglalok le helyetű
+    // 2 pontnak foglalok le helyet
     struct p2D *Szakasz = (struct p2D *)malloc(2 * sizeof(struct p2D));
 
     Szakasz[0].x = 1;

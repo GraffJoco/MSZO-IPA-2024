@@ -2,6 +2,8 @@
 
 Az előző évi anyagok [itt érhetőek el](https://github.com/GraffJoco/MSZO-IPA-2023)
 
+**Az első ZH megoldó videója a [itt érhető el](https://youtu.be/FoXVHOzs8uE)**
+
 ## Félévközi tematika
 
 Itt a félévközi anyagokat lehet látni, heti bontásban. Ez nincs kőbe vésve, mert egyes gyakorlatok elmaradnak kurzustól függően.
@@ -14,7 +16,7 @@ Itt a félévközi anyagokat lehet látni, heti bontásban. Ez nincs kőbe vésv
 6. Struktúrák, Függvények
 7. Gyakorlás, Tippek
 8. **Zárthelyi**
-9. Stringkezelés
+9. Stringkezelés (L_08: Zárthelyi)
 10. String feldolgozása
 11. Fájlolvasás
 12. Fájl feldolgozása
