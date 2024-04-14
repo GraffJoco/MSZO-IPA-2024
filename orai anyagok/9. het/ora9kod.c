@@ -1,9 +1,22 @@
+#define _USE_MATH_DEFINES
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h> // stringkezelésre használt függvények
 #include <ctype.h> // toupper, tolower
+#include <math.h>
 
 #define STR_HOSSZ 101 // konstans helyett define-al jelöljük a hosszat
+
+// fgv ismétlés
+double korTerulete(double R) {
+    return M_PI * R * R;
+}
+// Összetettebb példa: Fibonacci sor, rekurzió
+int Fibonacci(unsigned int ertek) {
+    if (ertek == 1 || ertek == 0) return ertek;
+    return Fibonacci(ertek - 1) + Fibonacci(ertek - 2);
+}
+
 
 //kiíratás betűnként
 void betuz(char* c)
