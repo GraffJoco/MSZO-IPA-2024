@@ -22,3 +22,19 @@ f) Mi az eredő vektor? Hosszabb e az eredő, mint a leghosszabb vektor?
 
 g) Melyek a leghosszabb vektorhoz tartozó koordináták?
 
+## Szóhosszak
+
+A "szavak.txt" fájlban található szövegben számolja meg, hogy az egyes szóhosszakból hány darab szó fordul elő, ha a maximális szószám 101!. Egy fájlba írja ki a szóhosszak száma szerint rendezve a darabszámot és a megtalált szavakat. (A ’.’ ’,’ ’!’ ’?’ ’\n’ ’\r’ karakterek nem részei a szavaknak)
+
+## Gyümölcsök
+
+A "gyumolcs.txt" fájlban található gyümölcsnevek elé írjuk be a magyar nyelv szabálya szerint a határozott névelőt.
+Bónusz: A névelővel rendelkező gyümölcsöket írjuk ki fordított sorrendben egy másik fájlba.
+
+## Távolság
+
+Számolja ki a "tavolsag.txt" fájlban megadott sebesség és idő függvényében a megtett távot méterben. A sorokat a számítási eredménnyel együtt írjuk ki a képernyőre.
+
+## Statika
+
+Készítsen el egy olyan struktúrát, amely térbeli erők és/vagy helyvektorok tárolására alkalmas. Töltse be a struktúrába a helyvektort és az erőkomponenseket az "ero.txt" fájlból (rx,ry,rz,Fx,Fy,Fz). Határozza meg az eredő erőt és a nyomatékot az origóra! Egyensúlyban van?
