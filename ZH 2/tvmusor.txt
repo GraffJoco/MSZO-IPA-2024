@@ -1,0 +1,270 @@
+M1	05:50	Ma reggel
+M1	06:00	Hirado, sporthirek
+M1	06:22	Idojaras-jelentes
+M1	06:24	Agrarhirek
+M1	06:27	Egy Perc Hirado
+M1	06:30	Kozlekedesi hirek
+M1	06:35	Agrarhirado
+M1	06:52	Idojaras-jelentes
+M1	06:54	Kozlekedesi hirek
+M1	07:00	Hirado, sporthirek
+M1	07:17	Idojaras-jelentes
+M1	07:23	Kozlekedesi hirek
+M1	07:25	Gazdasagi Hirek
+M1	07:27	Egy Perc Hirado
+M1	07:43	Egy Perc Hirado
+M1	07:52	Kozlekedesi hirek
+M1	07:54	Idojaras-jelentes
+M1	08:00	Hirado
+M1	08:26	Kozlekedesi hirek
+M1	08:28	Idojaras-jelentes
+M1	08:30	Egy Perc Hirado
+M1	08:45	Egy Perc Hirado
+M1	08:52	Kozlekedesi hirek
+M1	08:54	Idojaras-jelentes
+M1	09:00	Ma delelott
+M1	09:01	Hirado
+M1	09:12	Idojaras-jelentes
+M1	09:14	Kozlekedesi hirek
+M1	09:15	Kosar
+M1	09:51	Idojaras-jelentes
+M1	09:53	Kozlekedesi hirek
+M1	10:00	Hirado
+M1	10:12	Idojaras-jelentes
+M1	10:14	Kozlekedesi hirek
+M1	10:15	Unio28
+M1	10:51	Idojaras-jelentes
+M1	10:53	Kozlekedesi hirek
+M1	11:00	Hirado
+M1	11:30	Egy Perc Hirado
+M1	11:39	Egy Perc Hirado
+M1	11:49	Idojaras-jelentes
+M1	11:51	Kozlekedesi hirek
+M1	12:00	Deli harangszo
+M1	12:01	Deli hirado
+M1	12:45	Ma delutan
+M1	12:46	Egy Perc Hirado
+M1	13:00	Hirado
+M1	13:10	Idojaras-jelentes
+M1	13:12	Kozlekedesi hirek
+M1	13:15	Iskolapad
+M1	14:00	Hirado
+M1	14:10	Idojaras-jelentes
+M1	14:12	Kozlekedesi hirek
+M1	14:15	Hirhatter
+M1	15:00	Hirado
+M1	15:10	Idojaras-jelentes
+M1	15:12	Kozlekedesi hirek
+M1	15:15	Profit7
+M1	16:00	Hirado
+M1	16:10	Idojaras-jelentes
+M1	16:12	Kozlekedesi hirek
+M1	16:15	Unio28
+M1	17:00	Hirado
+M1	17:10	Idojaras-jelentes
+M1	17:12	Kozlekedesi hirek
+M1	17:15	Kosar
+M1	18:24	Sporthirek
+M1	18:26	Idojaras-jelentes
+M1	18:28	Kozlekedesi hirek
+M1	18:30	Ma este
+M1	18:33	Egy Perc Hirado
+M1	18:45	Egy Perc Hirado
+M1	19:00	Hirado
+M1	19:10	Idojaras-jelentes
+M1	19:12	Kozlekedesi hirek
+M1	19:16	Agrarhirado
+M1	19:30	Hirado
+M1	20:25	Sporthirek
+M1	20:30	Idojaras-jelentes
+M1	20:35	Ma este
+M1	21:00	Hirado
+M1	21:20	Idojaras-jelentes
+M1	21:35	Egy Perc Hirado
+M1	22:00	Ma ejjel
+M1	22:01	Hirado
+M1	22:20	Sporthirek
+M1	22:30	Idojaras-jelentes
+M1	22:33	Vilaghirado
+M1	22:50	Vilagmeteor
+M1	23:00	Hirado
+M1	23:10	Idojaras-jelentes
+M1	23:45	Angol nyelvu hirek
+M1	00:00	Himnusz
+M1	00:03	ejszakai program
+M2	05:00	Bongeszo
+M2	06:00	Mesek Matyas kiralyrol
+M2	06:05	Pityke ormester
+M2	06:15	Lolka es Bolka
+M2	06:25	Mekk Elek az ezermester
+M2	06:35	Ozie Boo! - Mentsuk meg a Foldet!
+M2	06:40	Bogyo es Baboca
+M2	06:45	Irany Dinofold!
+M2	07:00	Babar es Badou kalandjai
+M2	07:20	Napfeny farm
+M2	07:35	A kis Amadeus - Az ifju Mozart kalandjai
+M2	08:05	Tesz-vesz varos
+M2	08:30	Bali
+M2	08:45	Loti es Futi
+M2	08:50	Lulu, a teknoc
+M2	09:05	A kis sarkany kalandjai
+M2	09:15	Pityke ormester
+M2	09:20	Melytengeri mentocsapat
+M2	09:35	Peppa malac
+M2	09:40	Caillou
+M2	09:45	KerekMese
+M2	09:50	Segitseg kacsaszarnyakon
+M2	10:05	Kedvencek a vilag korul
+M2	10:20	Meselj nekem!
+M2	10:30	Hetedhet gyerekhirado
+M2	10:40	Szuper sportosok
+M2	10:50	Geronimo Stilton
+M2	11:15	Hunyormajor
+M2	11:40	Animalia
+M2	12:10	Telmo es Tula, a kis ezermesterek
+M2	12:15	David, a torpe
+M2	12:45	David, a torpe
+M2	13:10	okori kalandok
+M2	13:40	Animalia
+M2	14:10	Hunyormajor
+M2	14:35	Geronimo Stilton
+M2	14:55	Szuper sportosok
+M2	15:10	Kedvencek a vilag korul
+M2	15:25	Caillou
+M2	15:30	Segitseg kacsaszarnyakon
+M2	15:45	A kis Amadeus - Az ifju Mozart kalandjai
+M2	16:10	Lolka es Bolka
+M2	16:20	Tesz-vesz varos
+M2	16:50	Loti es Futi
+M2	16:55	Lulu, a teknoc
+M2	17:10	A kis sarkany kalandjai
+M2	17:20	Bali
+M2	17:40	Mesek Matyas kiralyrol
+M2	17:45	Peppa malac
+M2	17:55	Meselj nekem!
+M2	18:05	Mekk Elek az ezermester
+M2	18:10	Magyar nepmesek
+M2	18:20	KerekMese
+M2	18:30	Melytengeri mentocsapat
+M2	18:40	Ozie Boo! - Mentsuk meg a Foldet!
+M2	18:45	Irany Dinofold!
+M2	19:05	Bogyo es Baboca
+M2	19:10	Napfeny farm
+M2	19:20	Babar es Badou kalandjai
+M2	19:45	Hetedhet gyerekhirado
+M2	20:00	Bongeszo
+M2	21:00	en vagyok itt
+M2	22:40	Borgiak
+M2	23:30	Kenyszerszinglik
+M2	00:25	Az A38 Hajo szinpadan
+M2	01:20	en vagyok itt
+M2	02:50	Borgiak
+M2	03:40	Koncertek az A38 hajon
+M2	04:20	Connect with English
+M2	04:45	A vilagorokseg kincsei
+RTLKLUB	05:30	Top Shop
+RTLKLUB	06:00	Jo reggelt, skacok!
+RTLKLUB	07:35	RTL Klub Hirado
+RTLKLUB	08:08	8:08 - Minden reggel
+RTLKLUB	09:10	izes elet - Mautner Zsofival
+RTLKLUB	09:40	Reflektor
+RTLKLUB	10:05	Top Shop
+RTLKLUB	11:45	Asztro Show
+RTLKLUB	12:40	izes elet - Mautner Zsofival
+RTLKLUB	13:00	Reflektor
+RTLKLUB	13:15	Agymenok
+RTLKLUB	13:40	Fokusz
+RTLKLUB	14:10	ejjel-nappal Budapest
+RTLKLUB	15:25	A vihar
+RTLKLUB	16:20	A szerelem foglyai
+RTLKLUB	16:45	Dr. Toth
+RTLKLUB	18:50	Fokusz
+RTLKLUB	19:20	ejjel-nappal Budapest
+RTLKLUB	20:40	Baratok kozt
+RTLKLUB	21:15	CSI: Miami helyszinelok
+RTLKLUB	22:15	RTL Klub Hirado
+RTLKLUB	22:40	Gyilkos elmek
+RTLKLUB	23:45	Magyarul Baloval
+RTLKLUB	00:20	Odaat
+RTLKLUB	01:20	Reflektor
+RTLKLUB	01:35	Titkok otthona
+RTLKLUB	02:20	a'la CAR
+RTLKLUB	02:45	Trendmania
+RTLKLUB	03:10	Teresa
+RTLKLUB	04:00	Reflektor
+RTLKLUB	04:10	Baratok kozt
+RTLKLUB	04:45	Dr. Toth
+TV2	05:05	Csapdaba csalva
+TV2	05:30	Csaladi Titkok
+TV2	06:20	HUNGARIKUMOK - made in Hungary
+TV2	06:25	Tenyek Reggel
+TV2	06:50	Mokka
+TV2	09:30	Stahl konyhaja
+TV2	09:35	Babapercek
+TV2	09:40	TeleShop
+TV2	10:45	Astro-Vilag
+TV2	11:55	HUNGARIKUMOK - made in Hungary
+TV2	12:00	Tenyek Delben
+TV2	12:25	Aktiv
+TV2	12:50	Csaladi Titkok
+TV2	13:55	Magannyomozok
+TV2	14:55	Valentina titka
+TV2	15:55	Emlekezz, Reina
+TV2	16:55	A Macska
+TV2	17:25	Fiorella
+TV2	19:30	Joban Rosszban
+TV2	20:15	Zsaruk
+TV2	21:15	eden Hotel
+TV2	22:35	NCIS
+TV2	23:35	Az inditek
+TV2	00:35	Tenyek Este
+TV2	01:20	Aktiv
+TV2	01:40	Sportos
+TV2	01:50	EzoTV.hu
+TV2	02:50	eletfogytig zsaru
+TV2	03:35	eletfogytig zsaru
+TV2	04:40	Aktiv
+AXN	07:00	Szellemekkel suttogo
+AXN	08:00	NCIS: Los Angeles
+AXN	09:00	Rejtelyek kalandorai
+AXN	10:00	Hawaii Five-0
+AXN	11:00	Bostoni halottkemek
+AXN	12:00	Gyilkos szamok
+AXN	13:00	Szellemekkel suttogo
+AXN	14:00	Hawaii Five-0
+AXN	15:00	Rejtelyek kalandorai
+AXN	16:00	Szellemekkel suttogo
+AXN	17:00	Szellemekkel suttogo
+AXN	19:00	NCIS: Los Angeles
+AXN	20:00	Hawaii Five-0
+AXN	21:00	NCIS
+AXN	22:00	NCIS
+AXN	23:00	NCIS: Los Angeles
+AXN	00:00	Gyilkos elmek
+AXN	01:00	Gyilkos szamok
+AXN	01:45	NCIS: Los Angeles
+AXN	02:30	Gyilkos elmek
+AXN	03:15	Szellemekkel suttogo
+COOL	05:00	Szalamandra
+COOL	06:00	Televizios vasarlas
+COOL	09:00	Medicopter 117 - A legimentok
+COOL	10:00	Baywatch
+COOL	11:00	Knight Rider
+COOL	12:00	A mentalista
+COOL	12:50	Medicopter 117 - A legimentok
+COOL	13:45	Cobra 11
+COOL	14:40	Cobra 11
+COOL	15:35	CSI: New York-i helyszinelok
+COOL	16:30	CSI: Miami helyszinelok
+COOL	17:20	Dr. Csont
+COOL	18:15	Showder Klub
+COOL	19:15	Gyilkos elmek
+COOL	20:15	A mentalista
+COOL	21:10	Dr. Csont
+COOL	22:10	Doglott aktak
+COOL	23:05	Hazudj, ha tudsz!
+COOL	00:00	Gyilkos elmek
+COOL	01:00	Dr. Csont
+COOL	02:00	Doglott aktak
+COOL	03:00	Dr. Csont
+COOL	04:00	Knight Rider
