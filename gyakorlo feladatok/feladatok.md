@@ -58,3 +58,52 @@ b) Hozz létre egy hallgató struktúrát! Legyen egy azonosítója, amely egy 4
 
 c) Írj egy függvényt, amely bemenete egy n egész szám, visszatérési értéke pedig az első n pozitív egész szám összege!
 
+
+## 6. Stringkezelés
+
+Adott az alábbi vers:
+```C
+char vers[] = "Tudom en mar, mit csinalok:\n\
+szoftverfejlesztonek allok.\n\
+Lesz majd harom monitorom,\n\
+a szekemet odatolom,\n\
+bucsut intek minden nyugnek,\n\
+Nyomkodom a billentyuket.\n\
+Mozi, szinhaz? Masnak hagyom,\n\
+nekem mindig van programom.\n\
+Kodot irok, mint a kemek,\n\
+szamitogepul beszelek.\n\
+Kitalalsz egy jo kis tervet,\n\
+elmondom a kompjuternek.\n\
+Igy fejlesztek szoftvert, sokat,\n\
+telefonra jatekokat,\n\
+GPS-t a kocsitokba\n\
+(belefer egy kicsi tokba),\n\
+szimulalhatsz helikoptert,\n\
+hogyha irok neki szoftvert,\n\
+hatart csak a kepzelet szab!\n\
+Es egesz nap gepezek csak.\n";
+```
+Feladatok:
+
+a) Határozzuk meg, hogy hány sorból áll a vers!
+
+b) Határozzuk meg, hogy hány mondatból áll a vers!
+
+c) Hány magánhangzó van a szövegben?
+
+d) Határozzuk meg a határozott ("a", "az") és határozatlan ("egy") névelők számát!
+
+e) Kérjünk be egy karaktert a konzolról! Írassuk ki az összes olyan szót **csupa nagybetűvel**, ami ezzel a betűvel kezdődik!
+
+f) Kérjünk be egy szót / mondatrészt a konzolról! Tartalmazza-e ezt a vers egy sora?
+
+g) Hány olyan szó van, ami páros számú betűből áll?
+
+h) Fűzzük egybe az összes szót, egy hosszú karakterláncba, bármi elválasztó karaktert kihagyva!
+
+
+
+
+
+

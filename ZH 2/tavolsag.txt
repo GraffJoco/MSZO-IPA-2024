@@ -1,0 +1,3 @@
+50km/h 15min 
+2m/s 5min
+10m/min 1h
