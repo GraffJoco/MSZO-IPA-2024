@@ -23,12 +23,16 @@ void kiir(double val) {
     printf("%lf\n", val);
 }
 
+double szumma(double a, double b, double c) {
+    if (a < 0) return NAN;
+    else return a + b + c;
+}
+
 // Összetettebb példa: Fibonacci sor, rekurzió
 int Fibonacci(unsigned int ertek) {
     if (ertek == 1 || ertek == 0) return ertek;
     return Fibonacci(ertek - 1) + Fibonacci(ertek - 2);
 }
-
 // Probléma: lassú a kód ~35 felett
 // Megoldás: Optimalizált Fibonacci algoritmus, ami globális változókat használ
 int* Fib_ertekek = NULL;
@@ -110,6 +114,15 @@ int main() {
     printf("%u\n", Fibonacci(30));
     printf("Gyors Fib: ");
     printf("%u\n", FibonacciGyors(30));
+
+    double beadott;
+    scanf_s("%lf", &beadott);
+    double megoldas = szumma(beadott,2,4.0);
+    if (isnan(megoldas)) {
+        printf("Nem ertelmes az osszeg!\n");
+        return -1;
+    }
+    printf("Lefutott a szumma!\n");
 
     // Struktúrák
     // Példány létrehozása
