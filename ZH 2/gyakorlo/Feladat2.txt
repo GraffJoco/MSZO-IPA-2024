@@ -1,0 +1,36 @@
+Feladat:
+Egy adatbazisunk van par diak targyairol es jegyeirol.
+Ebbol szeretnenk egy diak jegyeit kiszurni
+Az "adat.txt" fájl egy soranak formatuma:
+
+"nev"\t"targynev"\t"kredit"K"jegy"
+
+Kerjunk be a diak nevet akinek kivancsiak vagyunk az eredmenyeire!
+Majd ennek a diaknak a "jegy.txt" fajlba irjuk ki az adatait a kovetkezo formatumban:
+
+"targynev"\t"kredit"\t"jegy"
+
+A konzolra irassuk ki a diaknak a sulyozott atlagat!
+Majd irjunk egy fuggvenyt ami a sulyozott atlag, es teljesitett kredit tudataban visszaadja a KKI-t, majd azt is irassuk ki!
+(az 1-es megint szamolhato 1-gyel 0 helyett)
+
+Sulyozott atlag: 	Sum(kredit*jegy)/osszkredit
+KKI: 			Sum(kredit*jegy)/30*teljesitettkredit/osszkredit
+
+
+
+Példa:
+
+
+Gabor	CAD	4K4
+Attila	Gepelemek	5K3
+Tamas	G1	6K5
+Attila	CAD	4K3
+Gabor	Gepelemek	5K4
+Tamas	G2	6K5
+Attila	G2	6K3
+Gabor	G1	6K4
+Tamas	CAD	4K5
+Tamas	Gepelemek	5K5
+Attila	G1	6K3
+Gabor	G2	6K4

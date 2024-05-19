@@ -1,0 +1,35 @@
+Feladat:
+
+Kecskék pupilláját vizsgálta egy pár kiváncsi slipes egyetemista. Kíváncsiak voltak milyen pontosak eme kérődzők téglalap alakú szeme világa. 
+A MOGI méréstechnika laborjának jóvoltából lemérték a szögek pontosságát, és ezt az alábbi formában jegyzetelték le:
+
+Gida	85'45	86'34	94'89	92'22
+Albert	88'55	70'99	91'32	90'76
+...
+
+
+Tabulátorral elválasztva a kecskék neve majd a négy mért érték található szög és szögperc formátumban.
+
+A szög-szögpercet függvénnyel vátsd át szimpla szöggé!
+
+Számoljuk szögek derékszögtől való eltérés átlagát!
+Nevezzük meg a kecskét akinek a szögeinek 90°-tól való eltérése összesen a legkisebb!
+
+
+
+
+
+
+Lehetséges programozási menet:
+
+Struktúra készítése a fájl adatok fogadására
+
+Szögátváltó függvény készítése
+
+Fájl beolvasása:
+	Sorok tabulátorral való szétszedése
+	Szög és szögperc szétválasztása és szöggé átváltása
+
+Átlag számítás
+
+Legpontosabb kecske számítás
