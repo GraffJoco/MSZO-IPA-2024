@@ -1,4 +1,5 @@
 /* IPA 3. HETI GYAKORLAT: ELÁGAZÁSOK */
+//4.het lejebb
 
 #include <stdio.h>   // printf, scanf
 #include <stdbool.h> //bool

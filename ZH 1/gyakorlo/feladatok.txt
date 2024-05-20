@@ -1,0 +1,34 @@
+0.Feladat 
+Szókereső: 
+Generáljuk le random az n bekért számú betűzseton paklinkat! Mindegyik zsetonhoz legyen 1-10-ig rendelve egy random érték.
+Az ugyanolyan betűkhöz ugyanaz az érték tartozzon. Majd irassuk ki a zsetonokat abc sorrendben értékekkel alatta 2 sorban.
+
+
+0.Feladat folyatatás
+Folytatva a szókeresőt, irasd ki a legtöbb pontot érő betű/betűket!
+Számold ki az paklid összpontszámát és átlagát!
+
+
+
+1.Feladat
+L07:
+Készítsünk egy nagyon pontos random generált modellt az 07-es labor csoportról. 
+A csoport 24 fős, és a hallgatók benne a 18-21 évesek lehetnek, és 9% eséllyel balkezesek. 
+Továbbá 90% eséllyel nagyon szeretnek C-ben programozni. A maradék 10% csak moderáltan nagyon szereti a C-t.
+Irassuk ki a jobb-bal kezesek arányát, és hogy hányan szeretik nagyon a C-t!
+Majd egy bekért i-edik indexű hallgató adatait is irassuk ki!
+
+
+
+2.Feladat
+Prímek:
+Irassuk ki az első n-edik (bekért) prímszámot!
+
+
+
+
+
+3.Nehéz feladat 
+Koordináta pontok:
+Generáljuk le n bekért számú lebegőpontos random [-100;100] x y z koordináta pontokat. Generált sorrendben (nehezítés: random sorrendben) nevezzük el őket az első n ABC nagy betűivel. 
+Irassuk ki a pontokat, majd irassuk ki a leghosszabb és a legrövidebb szakaszt!
