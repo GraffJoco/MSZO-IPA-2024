@@ -12,27 +12,33 @@
 
 
 int main() {
-
-	char* input_chanel = (char*)malloc(STR_LENGHT);
-	int is_chanel_exist = 0;
+	// Kezdeti változók
+	char* input_channel = (char*)malloc(STR_LENGHT); // kért csatorna neve
+	int does_channel_exist = 0; // létezik a csatorna? (bool is lehetne)
+	// Beolvasott időpont óra, perc
 	int input_hour = 0;
 	int input_minute = 0;
 
-	while (!is_chanel_exist)
+	// Addig nyaggatjuk a felhasználót, amíg nincs jó csatorna
+	while (!does_channel_exist)
 	{
-		memset(input_chanel, 0, STR_LENGHT);
-		printf("The chanel you're looking for: ");
-		scanf_s("%s", input_chanel, STR_LENGHT);
-		if ((strcmp("M1", input_chanel) == 0 || strcmp("M2", input_chanel) == 0 || strcmp("RTLKLUB", input_chanel) == 0 || strcmp("TV2", input_chanel) == 0 || strcmp("AXN", input_chanel) == 0 || strcmp("COOL", input_chanel) == 0))
-			is_chanel_exist = 1;
+		// csatorna nevének olvasása
+		memset(input_channel, 0, STR_LENGHT);
+		printf("The channel you're looking for: ");
+		scanf_s("%s", input_channel, STR_LENGHT); // <- Ide inkább gets_s lenne jó!
+		
+		// ellenőrizzük, hogy a beolvasott csatorna létezik-e
+		if ((strcmp("M1", input_channel) == 0 || strcmp("M2", input_channel) == 0 || strcmp("RTLKLUB", input_channel) == 0 || strcmp("TV2", input_channel) == 0 || strcmp("AXN", input_channel) == 0 || strcmp("COOL", input_channel) == 0))
+			does_channel_exist = 1;
 		else
-			printf("The given chanel doesn't exist\n");
+			printf("The given channel doesn't exist\n");
 	}
 
 	printf("When do you want to watch TV?\n");
 	scanf_s("%i:%i", &input_hour, &input_minute);
 	int input_time = input_hour * 100 + input_minute;
 
+	// Fájlolvasás
 	FILE* file;
 
 	fopen_s(&file, file_name, "r");
@@ -43,11 +49,14 @@ int main() {
 		return -1;                    //vissza a hívóhoz
 	}
 
+	// Sor string
 	char* row = (char*)malloc(STR_LENGHT);
-	char* chanel, * program, * hour_str, * minute_str, * next;
+
+	// ideiglenes string, abból int változók
+	char* channel, * program, * hour_str, * minute_str, * next;
 	int hour, minute;
 
-	char* chanel_prev, * program_prev;
+	char* channel_prev, * program_prev;
 	int hour_prev, minute_prev;
 
 	while (!feof(file))
@@ -58,26 +67,31 @@ int main() {
 		//ha sikerült beolvasni valamit -> feldolgozzuk
 		if (strlen(row) > 0) //nem üres, van benne elválasztó
 		{
-			chanel = strtok_s(row, "\t", &next);
+			// string elemeinek olvasása CSATORNA\tORA:PERC\tPROGRAMNEV\n formátumból
+			channel = strtok_s(row, "\t", &next);
 			hour_str = strtok_s(NULL, ":", &next);
 			minute_str = strtok_s(NULL, "\t", &next);
 			program = strtok_s(NULL, "\n", &next);
 
+			// strtok stringet ad, int kell
 			hour = atoi(hour_str);
 			minute = atoi(minute_str);
 
-			if (strcmp(chanel, input_chanel) == 0 && (hour <= 19 ||(hour == 20 && minute == 0)) && (hour >= 17 || (hour == 16 && minute >= 15)))
+			// kicsit brute force kiírás (ha a perc <10, akkor kell 0 elé, hogy szépen nézzen ki)
+			// Ha a műsor 16:15 és 20:00 között van, akkor kiírjuk a konzolba
+			if (strcmp(channel, input_channel) == 0 && (hour <= 19 ||(hour == 20 && minute == 0)) && (hour >= 17 || (hour == 16 && minute >= 15)))
 			{
 				if (minute < 10)
-					printf("%s\t%i:0%i\t%s\n", chanel, hour, minute, program);
+					printf("%s\t%i:0%i\t%s\n", channel, hour, minute, program);
 				else
-					printf("%s\t%i:%i\t%s\n", chanel, hour, minute, program);
+					printf("%s\t%i:%i\t%s\n", channel, hour, minute, program);
 
 			}
 		}
 	}
 	fclose(file);
 
+	// fájl újranyitása további feldolgozásra
 	fopen_s(&file, file_name, "r");
 	if (!file)                        //hiba esetén
 	{
@@ -91,9 +105,10 @@ int main() {
 
 	minute_prev = 100;
 	hour_prev = 100;
-	chanel_prev = "";
+	channel_prev = "";
 	program_prev = "";
 
+	// Megadott idő utáni események kiírása
 	while (!feof(file))
 	{
 		memset(row, 0, STR_LENGHT);            //előző string törlése
@@ -102,7 +117,7 @@ int main() {
 		//ha sikerült beolvasni valamit -> feldolgozzuk
 		if (strlen(row) > 0) //nem üres, van benne elválasztó
 		{
-			chanel = strtok_s(row, "\t", &next);
+			channel = strtok_s(row, "\t", &next);
 			hour_str = strtok_s(NULL, ":", &next);
 			minute_str = strtok_s(NULL, "\t", &next);
 			program = strtok_s(NULL, "\n", &next);
@@ -112,22 +127,25 @@ int main() {
 			int time = hour * 100 + minute;
 			int prev_time = hour_prev * 100 + minute_prev;
 
+			// Bekért idő összehasonlítása a mostanival
 			if ((input_time >= prev_time && input_time < time) || (input_time >= prev_time && time < 100 && prev_time > 1200))
 			{
 				if (minute < 10)
-					printf("%s\t%i:0%i\t%s\n", chanel_prev, hour_prev, minute_prev, program_prev);
+					printf("%s\t%i:0%i\t%s\n", channel_prev, hour_prev, minute_prev, program_prev);
 				else
-					printf("%s\t%i:%i\t%s\n", chanel_prev, hour_prev, minute_prev, program_prev);
+					printf("%s\t%i:%i\t%s\n", channel_prev, hour_prev, minute_prev, program_prev);
 			}
 
-			chanel_prev = chanel;
+			channel_prev = channel;
 			program_prev = program;
 			hour_prev = hour;
 			minute_prev = minute;
 		}
 	}
+
+	// Fájl zárás, és memória felszabadítása (el ne felejtsd!)
 	fclose(file);
 
 	free(row);
-	free(input_chanel);
+	free(input_channel);
 }
