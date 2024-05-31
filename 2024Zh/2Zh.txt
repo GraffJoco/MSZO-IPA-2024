@@ -1,0 +1,71 @@
+1.
+Neptun login: Az óra délután 4-et mutat a tárgyfelvétel napján. Az OHV-kat időben befejezted, a Neptun kódot és jelszót, pedig a böngésződ már kitöltötte. 
+Ezt a látszólag akadálymentes utat az előre összeállított tökéletes órarendedhez hirtelen egy külalak alapján orvosok által írt captcha állítja meg. 
+Eme egymástól alig megkülönböztethető karakter pacákat elég gyorsan, mindössze 15. próbálkozásra sikerült is helyesen beírnod. 
+Kongratulációul a Neptun 13548. próbálkozásra, 17:43-kor be is enged. 
+Boldog félévet!
+Feladat:
+Készítsük egy egyszerűsített Neptun belépőt. A Neptun adatbázisa egy txt fájl legyen, ahol minden sorban egy Neptun kódot és egy jelszó található tabulátorral elválasztva egymástól.
+
+A megvalósítandó belépő a következő. A konzolba kérjük be a Neptun kódot, majd a jelszót. Az adatbázis megfelelő beolvasásával határozzuk meg, hogy létezik-e a beadott kód és jelszó páros. 
+Ha a neptun létezik, de a jelszó más hozzá, akkor “Hibás jelszó” kiírása után lép ki a program, ha a kód nem is létezik, akkor “Hibás Neptun kód”-dal lép ki.
+Ha a felhasználó mindkettőt eltalálta, jöhet a captcha! 
+Egy random generált maximum 6 számjegyű egész szám lesz a captcha. De mielőtt ezt a konzolra kiíratnánk rakjuk be egy “megolvahatatlanito” függvénybe. 
+Ez a függvény az 1-eseket 7-esekkel, 5-ösöket a 6-osokkal oda-vissza átcseréli. A felhasználó ezt a generált értéket fogja látni, de természetesen a program csak az eredeti captcha-t fogadja el. 
+Minden hibás beírás után a captcha új értéket generál (meg a megolvahatatlanitott párját), hogy még véletlenül se legyünk robotok.
+Ha ezen is túl van a felhasználó, végezetül írjunk ki neki egy 1 - 30 000 -es tartományban egy véletlen számot. Ennyiedik próbálkozásra engedte be a Neptun!
+
+
+
+2.
+4-es 6-os menetrend: BME-s hallgatóként nagy valószínűséggel igénybe vetted már a 4-es 6-os villamos szolgáltatását, ahol néha rejtélyes aromák és érdekes egyének fogadhatják az utazókat. 
+De nézted-e már a menetrendjét? Vagy bizalmadat adva e tömegközlekedési vonalnak csak vártad amíg megjött? Bármi is a válaszod, most az a nemes feladat ért téged hogy megírd a menetrend lekérdező programját!
+Feladat:
+A “menetrend4.txt”-ben a 4-es, a “menetrend6.txt”-ben a 6-os villamos napi menetrendje található.
+Soronként először az óra található majd kettőspont, majd a percek tabulátorral elválasztva, pl:
+17:05	15	25	35	45	55
+18:05	15	25	35	45	55
+Kérd be a felhasználótól, hogy mikortól van az állomáson és hogy 4-es vagy 6-os villamossal, vagy mindegy melyikkel utazna.
+A konzolra írja ki a program, hogy hány perc múlva érkezik legközelebb a kért villamos (írjuk is ki hogy melyik érkezik).
+Az óra+perc perccé konvertálását függvénnyel írjuk meg.
+Ha aznap már nem érkezik az adott villamos akkor értelemszerűen a következő napi elsővel számoljunk.
+
+
+3.
+BME termek neve: Már megint eltévedt gólyák hírét sodorta feléd a reggeli szelek. Még nem szokták meg a terem nevek anomáliáját. Alsó éveseid beilleszkedésének megsegítésére elkészítetted a BME Teremnév Egyértelműsítő 2000-et!
+Miután e jó tetted befejezettnek gondoltad, ugrott be a fejedbe az épületek esetleges szárnyainak és a betűkkel, római számokkal jelölt termek létezése. 
+A gólyák harca terem nevekkel folytatódik
+Feladat:
+Egy txt fájl minden sorában található egy már remélhetőleg megszokott formátumú teremnév (pl: K155). Ezeket szeretnénk átírni egy másik fájlba. Ennek átírt, emészthetőbb fájl egy sorának formátuma: “X épület Y. emelet Z. terem”.
+
+Az átírás szabályai: Alapvetően legelöl a betűk az épületet jelölik, utána lévő számjegy az emeletet, majd a többi számjegy a terem számot. Na de ennyiből még nem lenne zh!
+A kivételek, amire figyelni kell: Az emeletek sajnos nem feltétlen számmal vannak jelölve. Ilyen a földszint “F”, magasföldszint “M” és az alagsor jelölések pl: “P1”. 
+Ezek kezelése karakter/string kereséssel tehetőek meg, ehhez segítség: Épület nevekben első betűként szerepel csak “F”, tehát ezt szemmel tartva lehet erre keresni. 
+Az “M”-re is ez igaz egy kivétellel, az “MM”. Szerencsére ez is kezelhető, mivel “M” épület nem létezik, tehát az “MM”-nek csak egy értelme van, nem lehet “M épület magasföldszint”. 
+Az alagsor jelölő “P” szerencsére még első karakterként sem szerepel egy épületnévben sem, de kezelünk kell az utána szereplő számjegyet, hiszen az jelöli az alagsor számát.
+Ne felejtsük a fájlba írásnál az “Y. emelet” helyett “földszint”, “magasföldszint”, “Y. alagsor”-t írni. És számok nem lehetnek az épület nevekben (a V1 csak V, V2 úgy se létezik már).  
+
+
+
+4.Csirke verseny:
+Unatkozó gazdák csirke versenyt rendeznek. Összevetik, melyik csirke ér leghamarabb a megmaradt idei kukoricákkal megjelölt célba. Az eredményt e nevenincs falu egyetlen működő számítógépében tárolják el.
+Feladat: A txt fájlba elmentett adatok soronként egy csirkéhez tartoznak. Egy sor formátuma (adatok között tabulátor):
+“CsirkeNév	Gazda		Idő”
+
+Írassuk ki a leggyorsabb csirke nevét, gazdáját és sebességét km/h-ban. A sebességet az időből egy függvény számítsa ki. Ehhez a lefutott távolságot utólag lemérték, ami 42 méter volt. 
+Írjuk bele egy txt fájlba a gazdák nevét, a versenyben részt vett csirkéinek számát és a leggyorsabb csirkéjének a sebességét km/h-ban tabulátorral elválasztva:
+“Gazda	darabCsirke	maxSebesség”
+Tudjuk még azt, hogy a falu lakossága 300, és ebből 20-nak van csirkéje.
+
+
+Pótzh 2:
+P2.1: Spagetti térfogata
+Egy tészta kedvelő olasz étteremről olasz étteremre járva lemérte az eléadott tészta méreteit. A spagetti.txt ben ezeket az adatokat találjuk meg “hossz;átmérő” alakban. 
+Olvassuk be ezeket az adatokat, és számoljuk ki a lemért spagettik össz térfogatát!
+A hossz és átmérőből térfogatba számítást egy függvényben végezzük el.
+
+
+
+P2.2: Tej
+Egy egyetemista tej fogyasztására vagyunk kivácsiak. Ezért egy kollégium szobáinak heti kidobott 1l-es tejes dobozait számoltuk meg. 
+Az adatok a tej.txt-ben találhatóak meg “szobaszám;darabdoboz” alakban. Írassuk ki a kollégium átlagos kidobott doboz darabszámát, és a legtöbb tejet fogyasztó szobát!

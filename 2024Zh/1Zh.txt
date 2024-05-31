@@ -1,0 +1,62 @@
+1. 
+Reghét egyetem körút: Augusztus utolsó hete van. Kármán Tódor kollégium kapujánál állva gyűlnek előtted az egyetemi életről még mit sem sejtő gólyák. 
+A program, amit vezetni fogsz az a BME épületeinek meglátogatása abc sorrendben. Ideje kiszámolni, hogy mire is vállalkoztál!
+Feladat:
+Célozzunk meg elsőször egy kíméletes 5 épületet. Ezeknek egész x y koordinátáit és egy egy karakterből álló nevét olvassa be “x;y;név” alakban. 
+Rendezze ezeket név szerint abc sorrendbe. Majd a program írja ki hogy összesen hány egységnyi gyaloglásra vannak ítélve a gólyák.
+
+
+
+2.
+Zh időpontok: Elérkezett a félév közepe. Közelednek a zh időpontok. Vagy már itt vannak? Esetleg most pont már írod is? Semmi probléma! Megérkezett a Zh Detektor 2000! 
+Feladat:
+Miután a programnak megadtad hány Zh-d lesz, kérd be ennek megfelelő számú tárgy nevének kezdőbetűjét, hány nap múlva lesz és hogy mennyi nappal előtte kezdenél el tanulni rá “napmulva;tanulasido;név” alakban. 
+Ezután a program írja ki, hogy hány nap múlva kell elkezdeni legközelebb zh-ra tanulni és melyikre (ha több is van ugyanakkor, mindegyik kezdőbetűjét írja ki). 
+Ne felejtsd el azokat az eseteket kezelni, amikor már a tanulást rég el kellett volna kezdeni.
+
+
+
+3.
+Aknakereső: Hirtelen elfogott a nosztalgia. Nem tudod a fejedből kiverni a Windows XP desktop látványát. Erről jut eszedbe, a jó öreg aknakereső már nem default applikáció. Milyen lehet leprogramozni?
+Feladat:
+Kérd be hogy mennyi akna legyen a 10x10-es akna meződben. Az aknák helyét random generáld le, de vigyázz, egy helyen ne legyen több akna. 
+Majd kérj be “sor;oszlop” alakban egy mezőt és közölje velünk a program hogy felrobbantunk-e.
+
+
+
+4.
+Osztók: Ugorjunk vissza az időben, még a felületi integrálás és vektoranalízis előtti időkbe, amikor a matematikában még számokkal számoltunk. Vizsgáljunk oszthatóságot! 
+Feladat: 
+Az első n (bekért) pozitív számot írassuk ki osztók száma szerint csoportosítva! A legtöbb osztóval rendelkezőkkel kezdve csökkenő sorrendben.
+
+
+
+5.
+Szabvál kreditek: Összeraktad az új félévre az órarendet, de valami hiányzik. Hát persze, a szabválok. De mennyit kéne felvenni?
+Feladat: 
+Olvasd be, hogy csak a kötelező tárgyakból mennyi KKI-t becsülsz, majd kérd be, hogy szabválokkal együtt mennyi KKI-t szeretnél elérni “mostaniKKI;célKKI” alakban. 
+A program ezután írja ki hogy legkevesebb, hány kreditnyi szabvállal lehet ezt a célt elérni, feltételezve hogy minden szabválból 5-ös leszel. 
+Ne felejtsd el, hogy 1 kredites tárgy nem igazán létezik (a fizika tanszéken amúgy találtam 4-et, de ezekre nem hiszem hogy tolakodva jelentkeznénk). 
+KKI képlet:(kreditjegy)30 (teljesített kredittel nem korrigálunk, tehát ez valójában csak KI)
+
+
+
+6.
+KKI számoló: Mint BME-n tanuló hallgató, biztos hogy találkoztál a KKI fogalmával, sőt valószínűleg számolnod is kellett már vele. Ehhez a döntő fontosságú kritikus érték kiszámításához hívjuk segítségül a mindenki által szeretett C nyelvet! 
+Feladat: 
+Miután bekértük, hogy hány tárggyal szeretnénk számolni, olvassuk be azok adatait “kredit;jegy” formában, és tároljuk ezeket egy megfelelő struktúra tömbben. Majd írassuk ki a KKI-t. 
+KKI képlet: (kreditjegy)30teljesített kreditösszes kredit
+
+
+Pótzh:
+P1.1: Szimuláljunk békákat!
+Készítsünk egy béka struktúrát. Ennek tartalmaznia kell a békák tulajdonságait, amik a 2-10 cm-ig terjedő nyelvhosszuk (nem egész szám), és hogy naponta hány rovart esznek meg (ennek intervalluma legyen 10-20 db). 
+Kérjük be a felhasználótól, hogy hány békát generáljunk le! Az összes békának a megadott intervallumokon random töltsük fel a tulajdonságait. 
+Írassuk ki, hogy naponta átlagosan hány centit utazik egy béka nyelve hegye rovar evés céljából! (Tegyük fel hogy mindig teljesen kinyújtják a nyelvüket. Vigyázat a nyelvük oda és vissza is megy!)
+
+
+P1.2: Jelzőlámpák
+Egy struktúrával jellemezzük a jelzőlámpák aránytalan fázis idejét. 
+Először a közelben elhelyezkedő 20 lámpát szeretnéd leírni. Ezek körülbelül 3,5 - 10 mp-ig zöldek, és 20 - 200 mp-ig pirosak. 
+Random számokkal töltsük fel a megadott intervallumokon a tulajdonságokat. Írjuk ki a legnagyobb piros/zöld idő arányt. 
+Majd írassuk ki a tulajdonságait egy bekért sorszámú lámpának!      
